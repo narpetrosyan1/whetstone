@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.all_content{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.background{
+    background-image: url(../img/background.jpg);
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+/*    background-attachment: fixed;*/
+    background-position: center;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    color: white;
+    width: 100%;
+}
+
+a{
+    color: white;
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif;   text-decoration: none;
+}
+
+ul li{margin-right: 20px;}
+
+ul li:nth-child(1){
+    margin-left: 40px;
+    margin-right: 0;
+}
+
+ul li:nth-child(2){
+    margin-left: 905px;
+}
+
+ul li:nth-child(10){
+    color: #8D5F1E;
+}
+
+.about{
+    background: white;
+    width: 100%;
+    height: 445px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    color: #96031A;
+    font-size: 42px;
+    font-family: 'Open Sans Condensed', sans-serif;   font-weight: 600;
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+h3{
+    color: #333333;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: 20px;
+}
+
+hr{
+    width: 150px;
+    background-color: #96031A;
+    border: none;
+    margin: 0 auto;
+    height: 3px;
+}
+
+.dev{
+    background-color: #F6F4F2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.house_types{
+    width: 80%;
+    height: auto;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 50px auto;
+    display: flex;
+    box-shadow: 0 0px 11px -3px black;
+}
+
+.explore{
+    width: 34%;
+    height: 455px;  
+    transition: 0.3s;
+}
+
+.explore img{
+    margin-top: 65px;
+}
+
+.explore h2{
+    color: #000000;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    word-spacing: 7px;
+    margin-top: 10px;
+}
+
+.explore h3{
+    margin-top: 0;
+    color: #4F4F4F;
+}
+
+button{
+    margin-top: 30px;
+    padding: 6px 50px;
+    border: 2px solid #96031A;
+    color: #96031A;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 900;
+    border-radius: 50px
+}
+
+.explore:hover{
+    transform: scale(1.1);
+    background-color: white;
+    box-shadow: 0px 0px 9px -3px black;
+}
+
+.explore:hover button{
+    background-color: #96031A;
+    color: white;
+} 
+
+.exp_func{
+    border: 2px solid #4f4f4f;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 30px auto;
+    padding: 2px;
+}
+
+.explore a{
+    color: #4f4f4f;
+}
+
+.gallery{
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.int_ext{
+    width: 49%;
+    height: 720px;
+    margin-top: 30px;
+}
+
+.slide{
+    width: 100%;
+    height: 350px;
+}
+
+.int{
+    background-image: url(../img/interier.jpg);
+    background-size: cover;
+    margin-bottom: 20px;
+     filter: grayscale(0.7);
+    -webkit-filter: grayscale(0.7);
+}
+
+.ext{
+    background-image: url(../img/ecterior.jpg);
+    background-size: cover;
+    filter: grayscale(0.7);
+    -webkit-filter: grayscale(0.7);
+}
+
+.video{
+    width: 49%;
+    height: 720px;
+    background-image: url(../img/video.jpg);
+    background-size: cover;
+    margin-top: 30px;
+    filter: grayscale(0.7);
+    -webkit-filter: grayscale(0.7);
+}
+
+.gallery p{
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-align: left;
+    padding: 20px 0 0 30px;
+}
+
+.play{
+    width: 100%;
+    height: 720px;
+    transition: 0.5s;
+}
+
+.play button{
+    display: none;
+    font-size: 100px;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+}
+
+.video:hover .play{
+    background-color: #453a3a;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video:hover button{
+    display: block;
+    border: 0;
+    outline: none;
+}
+
+.coming{
+    width: 100%;
+    background-color: #F6F4F2;
+    display: flex;
+    flex-direction: column;
+}
+
+.coming_info{
+    width: 80%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto 70px;
+    background-image: url(../img/brixton.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -270px;
+}
+
+.opac{
+    width: 100%;
+    height: 250px;
+    background-color: red;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.footer_cont {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    border-bottom: 2px solid grey;
+}
+
+.footer_col{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer_col ul{flex-direction: column;display: flex}
+.footer_col ul>li,h1{margin: 0;padding: 0;}
+
+.col1 h1,p{
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.col4 button {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 27px;
+
+}
+
+.col4 i {
+    color: white;
+}
+
+.privacy{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    height: 70px;
+}
+
+.priv_info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px auto 0;
+    color: white;
+}
+
+.priv_info ul{justify-content: space-evenly;}
+
+.priv_info li{
+    margin: 0;
+    padding: 0;
+    font-family:'Open Sans Condensed', sans-serif; 
+}
+.priv_info li:nth-child(1){margin: 0;}
+.priv_info li:nth-child(2){margin: 0;}
+
+h1{margin-top: 70px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F6F4F2;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    color: white;
+    width: 100%;
+}
+
+a{
+    color: white;
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif;   text-decoration: none;
+}
+
+ul li{margin-right: 20px;}
+
+ul li:nth-child(1){
+    margin-left: 40px;
+    margin-right: 0;
+}
+
+ul li:nth-child(2){
+    margin-left: 905px;
+}
+
+ul li:nth-child(10){
+    color: #8D5F1E;
+}
+
+.house_pic{
+    display: flex;
+    flex-direction: column;
+    text-align: center
+}
+
+.house_pic h1{
+    font-family: 'Open Sans Condensed', sans-serif; 
+    color: #96031A;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-top: 80px;
+}
+
+.house_pic hr{
+    width: 180px;
+    background-color: #96031A;
+    border: none;
+    margin: 10px auto 0;
+    height: 3px;
+}
+
+.house_types{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row; 
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.types{
+    width: 10%;
+    height: 400px;
+}
+
+
+
+.t1{
+    background-image: url(../img/house_types/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    background-position: 280px; */
+}.t2{
+    background-image: url(../img/house_types/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    background-position: 280px; */
+}.t3{
+    background-image: url(../img/house_types/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    background-position: 280px; */
+}.t4{
+    background-image: url(../img/house_types/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    background-position: 280px; */
+}.t5{
+    background-image: url(../img/house_types/5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    background-position: 280px; */
+}.t6{
+    background-image: url(../img/house_types/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    background-position: 280px; */
+}.t7{
+    background-image: url(../img/house_types/7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    background-position: 280px; */
+}.t8{
+    background-image: url(../img/house_types/8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    background-position: 280px; */
+}.t9{
+    background-image: url(../img/house_types/9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    background-position: 280px; */
+}.t10{
+    background-image: url(../img/house_types/10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    background-position: 280px; */
+}
+
+.green{
+    height: 30px;
+    background-color: #66BB6A;
+    display:flex;
+    justify-content: center;
+    
+}
+
+.red{
+    height: 30px;
+    background-color: #96031A;
+    display:flex;
+    justify-content: center;
+    
+}
+
+.types:hover .green{
+    height: 40px;
+    background-color: #66BB6A;
+    transition: 0.5s;
+    padding-top: 10px;
+
+}
+
+.types:hover .red{
+    height: 40px;
+    background-color: #96031A;
+    transition: 0.5s;
+    padding-top: 10px;
+    
+}
+
+.fon{
+    height: 400px;
+/*    background-color: #B44A5B99;     */
+}
+
+.types:hover .fon{
+    background-color: #B44A5B99;
+}
+
+.types{text-align: center;}
+
+.types p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    margin-top: 110px;
+    display: none;
+    transition: 0.5s;
+}
+
+.types:hover p{
+    display: block;
+}
+
+.types button{
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    padding: 10px 25px;
+    border-radius: 48px;
+    display: none;
+    margin-left: 35px;
+    z-index: 2222
+}
+
+.types:hover button{display: block};
+
+.home7_info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 11;
+    top: -50px;
+    border-radius: 4%;
+    background-color: #F6F4F2;
+}
+
+.price{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 120px auto 0;
+    flex-wrap: wrap;
+}
+
+.price h1:nth-child(1){
+    font-family: 'Open Sans Condensed', sans-serif; 
+    color: black;
+}
+.price h1:nth-child(2){
+    font-family: 'Open Sans Condensed', sans-serif; 
+    color: #96031A;
+    margin-bottom: 20px;
+}
+
+.price p{
+    color: #3A3A3A;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.proj_info{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px auto 20px;
+    border-bottom: 2px solid #808080;
+}
+
+.home_ext{
+    width: 45%;
+    height: 508px;
+    margin-right: 4.5%;
+    background-image: url(../img/house_types/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home_project{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.home_project div{
+    width: 48%;
+    height: 250px;
+    margin-right: 1%;
+    background-image: url(../img/house_types/plan.jpg);
+    background-repeat: no-repeat;
+    background-size: 61%;
+    background-position: center;
+    background-color: white;
+    transition: 0.5s;
+}
+
+div#pr1{
+    margin: 0 1% 1% 0;
+    background-image: url(../img/block_A.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+}
+
+.hover{
+    width: 100%!important;
+}
+
+#pr3 .hover{
+    background-color: #e1a111;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover button{
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 10px;
+    outline: none;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.exp_func{
+    border: 2px solid #4f4f4f;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: 30px auto;
+    padding: 2px;
+    background-color: black;
+    color: white;
+}
+
+.pages{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto 90px;
+}
+
+.pages a{
+    color: black;
+    word-spacing: 2px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.footer_cont{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    border-bottom: 2px solid grey;
+}
+
+.footer_col{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer_col ul{flex-direction: column;display: flex}
+.footer_col ul>li,h1{margin: 0;padding: 0;}
+
+.col1 h1,p{
+    color: white;
+    text-align: left;
+}
+
+.col4 button{
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 27px;
+}
+
+.col4 i{
+    color: white;
+}
+
+.privacy{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    height: 70px;
+}
+
+.priv_info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px auto 0;
+    color: white;
+}
+
+.priv_info ul{justify-content: space-evenly;}
+
+.priv_info li{
+    margin: 0;
+    padding: 0;
+    font-family:'Open Sans Condensed', sans-serif; 
+}
+.priv_info li:nth-child(1){margin: 0;}
+.priv_info li:nth-child(2){margin: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
